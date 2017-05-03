@@ -1,0 +1,120 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   20.19.15.4549
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\Vuforia.UnityExtensions.dll (this message is harmless)
+Loading C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\Vuforia.UnityExtensions.dll into Unity Child Domain
+- Completed reload, in  0.263 seconds
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Nicolae\Desktop\vuforia\GUI_Vuforia\Vuforia_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on VuforiaAbstractBehaviour
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 376)
+
+OnLevelWasLoaded was found on VuforiaBehaviour
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 376)
+
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.119300 ms
+Setting BehaviourComponentFactory
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Vuforia initialization successful
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trackable gutschein_target lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not initialize the tracker.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SetHint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SetHint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SetHint
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StartVuforia
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Creating a Mono Camera Configuration (Check for reflection)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: d40 -> priority: 1 
+  Thread -> id: 32a0 -> priority: 1 
+MissingMethodException: Cannot find the requested method.
+  at (wrapper managed-to-native) UnityEngine.AndroidJNI:INTERNAL_CALL_ExceptionOccurred (intptr&)
+  at UnityEngine.AndroidJNI.ExceptionOccurred () [0x00000] in <filename unknown>:0 
+  at UnityEngine.AndroidJNISafe.CheckException () [0x00000] in <filename unknown>:0 
+  at UnityEngine.AndroidJNISafe.FindClass (System.String name) [0x00000] in <filename unknown>:0 
+  at UnityEngine.AndroidJavaObject.get_JavaLangClass () [0x00000] in <filename unknown>:0 
+  at UnityEngine.AndroidJavaObject.FindClass (System.String name) [0x00000] in <filename unknown>:0 
+  at UnityEngine.AndroidJavaClass._AndroidJavaClass (System.String className) [0x00000] in <filename unknown>:0 
+  at UnityEngine.AndroidJavaClass..ctor (System.String className) [0x00000] in <filename unknown>:0 
+  at link.checkPackageAppIsPresent (System.String package) [0x00000] in <filename unknown>:0 
+  at link.OpenFacebook () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCall.Invoke (System.Object[] args) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.InvokableCallList.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEventBase.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.Button.Press () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) [0x00000] in <filename unknown>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
+UnityEngine.EventSystems.StandaloneInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+ 
+(Filename:  Line: -1)
+
+Trackable gutschein_target lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+StopVuforia
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

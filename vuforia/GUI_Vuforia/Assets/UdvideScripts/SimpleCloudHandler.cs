@@ -2,27 +2,34 @@
 using UnityEngine;
 using System.Collections;
 using Vuforia;
+
+
 /*  This Script handles the Vuforia Cloud Recognition System.
- *  Building a GUI to visualize the connection with the Vuforia Server.
-        
-     
-     
-     */
+*  Building a GUI to visualize the connection with the Vuforia Server.
+
+
+
+*/
 public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler {
 	
 	private CloudRecoBehaviour mCloudRecoBehaviour;
 	private ObjectTracker mImageTracker;
     private bool mIsScanning = false;
-    private string mTargetMetadata = "";
+    public string textFromWWW;
+    private static string mTargetMetadata =  "";
+
 
     public ImageTargetBehaviour ImageTargetTemplate;
     public GameObject Text;
     public GameObject mBundleInstance = null;
-	
-	void Start () 
-	{		
-		
-	   mCloudRecoBehaviour = GetComponent<CloudRecoBehaviour>();
+
+
+    void Start () 
+
+	{
+        
+        
+        mCloudRecoBehaviour = GetComponent<CloudRecoBehaviour>();
        
 		if (mCloudRecoBehaviour)
         {
@@ -30,7 +37,9 @@ public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler {
         }
 		
 	}
-	public void OnInitialized() 
+
+
+public void OnInitialized() 
 	{
     Debug.Log ("Cloud Reco initialized");
 	}
@@ -55,20 +64,27 @@ public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler {
             mImageTracker.TargetFinder.ClearTrackables(false);
     }
 	}
-	
-	public void OnNewSearchResult(TargetFinder.TargetSearchResult targetSearchResult)
+
+    
+
+    public void OnNewSearchResult(TargetFinder.TargetSearchResult targetSearchResult)
 	{
+       
         DestroyImmediate(Text);
         mTargetMetadata = targetSearchResult.MetaData;
 
-       
+
+        WWW www = new WWW(mTargetMetadata);
+      // Debug.Log(mTargetMetadata);
+        StartCoroutine(WaitForRequest(www));
         Text = new GameObject("text1");
         Text.AddComponent<TextMesh>();
-            
-        Text.GetComponent<TextMesh>().text = mTargetMetadata;
+
+        Text.GetComponent<TextMesh>().text = textFromWWW ;
+        //Debug.Log(textFromWWW);
         Text.GetComponent<TextMesh>().richText = true;
         Text.GetComponent<TextMesh>().characterSize = 10;
-        Text.transform.rotation = Quaternion.Euler(90,-90,0);
+        Text.transform.rotation = Quaternion.Euler(90,0,0);
         mCloudRecoBehaviour.CloudRecoEnabled = false;
 		
 		
@@ -92,7 +108,19 @@ public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler {
              }
          }
     }
+    IEnumerator WaitForRequest(WWW www)
+    {
+
+        // Wait for download to complete
+        yield return www;
+
+      textFromWWW = www.text;
+        Debug.Log(textFromWWW);
+        
+        
+    }
     void Update () {
 	
+
 	}
 }

@@ -101,6 +101,7 @@
     <Compile Include="Assets\UdvideScripts\DynamicDatasetLoader.cs" />
     <Compile Include="Assets\UdvideScripts\Enable_Disable_Menu.cs" />
     <Compile Include="Assets\UdvideScripts\Flashlight_Button.cs" />
+    <Compile Include="Assets\UdvideScripts\GetURL.cs" />
     <Compile Include="Assets\UdvideScripts\LoadScene.cs" />
     <Compile Include="Assets\UdvideScripts\MyModellInstantiator.cs" />
     <Compile Include="Assets\UdvideScripts\QUIT.cs" />

@@ -35,7 +35,7 @@ public class link : MonoBehaviour
     public void OpenFHWS()
     {
 
-        Application.OpenURL("https://www.fhws.de/");
+        Application.OpenURL("https://www.fhws.de/"); //Open FHWS Homepage 
 
     }
 

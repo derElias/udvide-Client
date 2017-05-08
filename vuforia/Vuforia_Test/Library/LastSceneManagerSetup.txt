@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/Nicolae/Desktop/vuforia/GUI_Vuforia/Assets/UdvideScripts/AR.unity
+  isLoaded: 1
+  isActive: 1

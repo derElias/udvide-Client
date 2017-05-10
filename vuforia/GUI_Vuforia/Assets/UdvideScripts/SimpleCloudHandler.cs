@@ -15,14 +15,13 @@ public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler {
 	private CloudRecoBehaviour mCloudRecoBehaviour;
 	private ObjectTracker mImageTracker;
     private bool mIsScanning = false;
-    public string textFromWWW;
     private static string mTargetMetadata =  "";
-
+  
 
     public ImageTargetBehaviour ImageTargetTemplate;
-    public GameObject Text;
+    private GameObject Text;
     public GameObject mBundleInstance = null;
-
+    
 
     void Start () 
 
@@ -66,40 +65,30 @@ public void OnInitialized()
 	}
 
     
-
     public void OnNewSearchResult(TargetFinder.TargetSearchResult targetSearchResult)
 	{
-       
+      
         DestroyImmediate(Text);
+
         mTargetMetadata = targetSearchResult.MetaData;
-
-
-        WWW www = new WWW(mTargetMetadata);
-      // Debug.Log(mTargetMetadata);
-        StartCoroutine(WaitForRequest(www));
-        Text = new GameObject("text1");
-        Text.AddComponent<TextMesh>();
-
-        Text.GetComponent<TextMesh>().text = textFromWWW ;
-        //Debug.Log(textFromWWW);
-        Text.GetComponent<TextMesh>().richText = true;
-        Text.GetComponent<TextMesh>().characterSize = 10;
-        Text.transform.rotation = Quaternion.Euler(90,0,0);
+        StartCoroutine(GetTextFromWWW(mTargetMetadata));
         mCloudRecoBehaviour.CloudRecoEnabled = false;
-		
-		
-	if (ImageTargetTemplate)
+
+
+
+
+        if (ImageTargetTemplate)
 	{
-            mCloudRecoBehaviour.CloudRecoEnabled = true;
-    mImageTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
-    ImageTargetBehaviour imageTargetBehaviour = (ImageTargetBehaviour)mImageTracker.TargetFinder.EnableTracking(targetSearchResult, ImageTargetTemplate.gameObject);
+        
+            //mCloudRecoBehaviour.CloudRecoEnabled = true; /*Disables the Restart Scanning Button */ 
+            mImageTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
+            ImageTargetBehaviour imageTargetBehaviour = (ImageTargetBehaviour)mImageTracker.TargetFinder.EnableTracking(targetSearchResult, ImageTargetTemplate.gameObject);
           
         }
 		
     }
-	
 
-	void OnGUI() {
+    void OnGUI() {
 
         GUI.Box (new Rect(100,200,300,50), "Metadata: " + mTargetMetadata); 
         if (!mIsScanning) {
@@ -108,18 +97,39 @@ public void OnInitialized()
              }
          }
     }
-    IEnumerator WaitForRequest(WWW www)
-    {
 
-        // Wait for download to complete
+    /*
+     Creates a GameObject with a TextMesh that is using the Image Metadata 
+     Image Metadata must be a a link with a .txt 
+     for example https://test.000webhostapp.com/test.txt
+         */
+    IEnumerator GetTextFromWWW(string url)
+    {
+        
+        WWW www = new WWW(url);
+
         yield return www;
 
-      textFromWWW = www.text;
-        Debug.Log(textFromWWW);
-        
-        
+        if (www.error == null)
+        {
+            
+                    Text = new GameObject();
+                    Text.AddComponent<TextMesh>();
+
+                    Text.GetComponent<TextMesh>().text = www.text;
+                    Text.GetComponent<TextMesh>().richText = true;
+                    Text.GetComponent<TextMesh>().characterSize = 10;
+                    Text.transform.rotation = Quaternion.Euler(90, 0, 0);
+
+
+                
+            
+
+        }
+
     }
-    void Update () {
+
+void Update () {
 	
 
 	}

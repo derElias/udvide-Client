@@ -1,0 +1,15 @@
+diff a/vuforia/GUI_Vuforia/Assets/UdvideScripts/SimpleCloudHandler.cs b/vuforia/GUI_Vuforia/Assets/UdvideScripts/SimpleCloudHandler.cs	(rejected hunks)
+@@ -120,10 +120,11 @@
+                     Text.GetComponent<TextMesh>().richText = true;
+                     Text.GetComponent<TextMesh>().characterSize = 10;
+                     Text.transform.rotation = Quaternion.Euler(90, 0, 0);
++                    Text.transform.position -= new Vector3(150, 0, -150);
++
++
+ 
+ 
+-                
+-            
+ 
+         }
+ 

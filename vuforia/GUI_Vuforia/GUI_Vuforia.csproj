@@ -82,11 +82,11 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.dll</HintPath>
-    </Reference>
     <Reference Include="TextMeshPro">
       <HintPath>Assets\TextMesh Pro\Plugins\TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +132,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\UdvideScripts\CameraFocusMode.cs" />
     <Compile Include="Assets\UdvideScripts\DynamicDatasetLoader.cs" />
     <Compile Include="Assets\UdvideScripts\Enable_Disable_Menu.cs" />
     <Compile Include="Assets\UdvideScripts\Flashlight_Button.cs" />

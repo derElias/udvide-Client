@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 495}
   m_MaxSize: {x: 18008, y: 14045}
   vertical: 0
-  controlID: 2514
+  controlID: 401
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 495}
   m_MaxSize: {x: 14006, y: 14045}
   vertical: 0
-  controlID: 2515
+  controlID: 520
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 2516
+  controlID: 521
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 495}
   m_MaxSize: {x: 10004, y: 14045}
   vertical: 1
-  controlID: 2539
+  controlID: 443
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -412,14 +412,14 @@ MonoBehaviour:
     width: 594
     height: 466
   m_SceneLighting: 1
-  lastFramingTime: 174.87620277632848
+  lastFramingTime: 2461.2472506136833
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 64.5, y: 103, z: 0}
+    m_Target: {x: 64.5, y: 94.22661, z: 0}
     speed: 2
-    m_Value: {x: 64.5, y: 103, z: 0}
+    m_Value: {x: 64.5, y: 94.22661, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -446,9 +446,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: -1}
   m_Size:
-    m_Target: 267.0816
+    m_Target: 530.2633
     speed: 2
-    m_Value: 267.0816
+    m_Value: 530.2633
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -513,9 +513,9 @@ MonoBehaviour:
     height: 274
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c2c0000
-    m_LastClickedID: 11292
-    m_ExpandedIDs: dafbffff00000000082c0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 32f5ffffdcf5ffff88f7ffffdcfbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,19 +575,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/TextMesh Pro/Examples/Resources/Fonts & Materials
+    - Assets/UdvideScripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/TextMesh Pro/Examples/Resources/Fonts & Materials
+  - Assets/UdvideScripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Udvide\udvide-Client\vuforia\GUI_Vuforia
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 166}
-    m_SelectedIDs: ee270000
-    m_LastClickedID: 10222
-    m_ExpandedIDs: 00000000b8260000242700008a280000942800009c2800001c2900002829000094290000182a0000ac2a0000b82a0000b22c0000b42c0000b62c0000b82c0000ba2c0000bc2c0000be2c0000c02c0000c22c0000c42c0000c62c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 50}
+    m_SelectedIDs: 4a2a0000
+    m_LastClickedID: 10826
+    m_ExpandedIDs: 00000000b626000026270000902800009a280000a2280000222900002e2900009a2900002e2a0000b62a0000c22a0000262c0000282c00002a2c00002c2c00002e2c0000302c0000322c0000342c0000362c0000382c00003a2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,7 +615,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1ef9ffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8260000242700008a280000942800009c2800001c2900002829000094290000182a0000ac2a0000b82a0000b22c0000b42c0000b62c0000b82c0000ba2c0000bc2c0000be2c0000c02c0000c22c0000c42c0000c62c000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000b626000026270000902800009a280000a2280000222900002e2900009a2900002e2a0000b62a0000c22a0000262c0000282c00002a2c00002c2c00002e2c0000302c0000322c0000342c0000362c0000382c00003a2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

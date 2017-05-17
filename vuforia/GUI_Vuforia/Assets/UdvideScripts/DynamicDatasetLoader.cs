@@ -16,7 +16,7 @@ public class DynamicDatasetLoader : MonoBehaviour
     {
         // Vuforia 5.0 to 6.1
         VuforiaBehaviour vb = GameObject.FindObjectOfType<VuforiaBehaviour>();
-        vb.RegisterVuforiaStartedCallback(LoadDataSet);
+       // vb.RegisterVuforiaStartedCallback(LoadDataSet);
 
     }
 

@@ -6,7 +6,6 @@ All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
-using System;
 using UnityEngine;
 
 namespace Vuforia
@@ -78,11 +77,6 @@ namespace Vuforia
                 databaseLoader.AddExternalDatasetSearchDir(externalStorageDirectory + "/Android/data/" + packageName + "/files/QCAR/");
             }
 #endif //UNITY_ANDROID
-        }
-
-        internal void RegisterVuforiaStartedCallback(Action loadDataSet)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using Vuforia;
-
+using TMPro;
 
 /*  This Script handles the Vuforia Cloud Recognition System.
 *  Building a GUI to visualize the connection with the Vuforia Server.
@@ -16,7 +16,7 @@ public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler {
 	private ObjectTracker mImageTracker;
     private bool mIsScanning = false;
     private static string mTargetMetadata =  "";
-  
+    private GameObject findgameobject;
 
     public ImageTargetBehaviour ImageTargetTemplate;
     private GameObject Text;
@@ -26,8 +26,9 @@ public class SimpleCloudHandler : MonoBehaviour, ICloudRecoEventHandler {
     void Start () 
 
 	{
+        findgameobject = GameObject.Find("HistoryText");
         
-        
+
         mCloudRecoBehaviour = GetComponent<CloudRecoBehaviour>();
        
 		if (mCloudRecoBehaviour)
@@ -121,9 +122,7 @@ public void OnInitialized()
                     Text.GetComponent<TextMesh>().characterSize = 10;
                     Text.transform.rotation = Quaternion.Euler(90, 0, 0);
 
-
-                
-            
+            findgameobject.GetComponent<TextMeshProUGUI>().SetText(www.text);
 
         }
 
